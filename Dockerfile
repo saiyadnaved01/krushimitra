@@ -14,6 +14,7 @@ RUN npm ci
 # imports crop data from the server folder.
 COPY client client
 COPY server server
+RUN npm run build
 
 RUN npm run build
 
