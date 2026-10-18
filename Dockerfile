@@ -10,11 +10,9 @@ COPY server/package.json server/
 
 RUN npm ci
 
-# Copy both folders because the frontend translation checker
-# imports crop data from the server folder.
+# Copy both folders required by the frontend build
 COPY client client
 COPY server server
-RUN npm run build
 
 RUN npm run build
 
