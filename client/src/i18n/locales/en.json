@@ -1,0 +1,392 @@
+{
+  "common": {
+    "optional": "optional", "loading": "Loading…", "tryAgain": "Try again", "pleaseWait": "Please wait…",
+    "saving": "Saving…", "edit": "Edit", "delete": "Delete", "export": "Export", "view": "View",
+    "viewAll": "View all", "all": "All", "yes": "Yes", "closeDialog": "Close dialog"
+  },
+  "language": { "label": "Language", "hint": "Your choice is saved to your account and this device." },
+  "brand": { "tagline": "YOUR SMART FARMING PARTNER" },
+  "units": {
+    "acres": "acres", "quintals": "quintals", "kg": "kg", "kg_ha": "kg/ha", "setts_ha": "setts/ha"
+  },
+  "soil": { "Clay": "Clay", "Loamy": "Loamy", "Sandy": "Sandy" },
+  "moisture": { "Dry": "Dry", "Moderate": "Moderate", "Moist": "Moist" },
+  "water": { "Rainfed": "Rainfed", "Limited": "Limited irrigation", "Assured": "Assured irrigation" },
+  "waterHint": {
+    "Rainfed": "rain only",
+    "Limited": "some water, not always",
+    "Assured": "water whenever needed"
+  },
+  "waterNeed": { "High": "High", "Moderate": "Moderate", "Low": "Low" },
+  "seasons": { "Kharif": "Kharif (monsoon)", "Rabi": "Rabi (winter)", "Annual": "Annual (12–18 months)", "All seasons": "Any season" },
+  "status": { "Active": "Active", "Inactive": "Inactive", "Pending": "Pending", "Reviewed": "Reviewed" },
+  "categories": { "Irrigation": "Irrigation", "Fertilizer": "Fertilizer", "Inspection": "Inspection", "Harvest": "Harvest" },
+  "nutrients": { "N": "Nitrogen (N)", "P2O5": "Phosphorus (P₂O₅)", "K2O": "Potassium (K₂O)" },
+  "suitability": { "high": "Highly suitable", "moderate": "Moderately suitable", "low": "Less suitable" },
+  "factors": {
+    "soil": "Soil type", "ph": "Soil pH", "temperature": "Temperature", "water": "Water",
+    "season": "Season", "region": "Region", "moisture": "Soil moisture"
+  },
+  "factorStatus": { "good": "Good fit", "ok": "Acceptable", "poor": "Poor fit", "unknown": "Not enough data" },
+  "crops": {
+    "names": {
+      "rice": "Rice", "wheat": "Wheat", "maize": "Maize", "soybean": "Soybean", "cotton": "Cotton",
+      "sugarcane": "Sugarcane", "chickpea": "Chickpea", "groundnut": "Groundnut", "onion": "Onion", "tomato": "Tomato"
+    },
+    "pageTitle": "Crop Recommendations",
+    "title": "Grow the right crop.",
+    "subtitle": "Ranked for your soil, climate, water and location.",
+    "basedOn": "What this ranking is based on",
+    "basedOnSub": "The more you tell us, the more accurate it gets.",
+    "inputSoil": "Soil type", "inputPh": "Soil pH", "inputMoisture": "Soil moisture", "inputWater": "Water availability",
+    "inputState": "State", "inputClimate": "Local climate data", "notProvided": "Not provided",
+    "improveHint": "Add the missing details to get a more accurate ranking.",
+    "updateProfile": "Update your farm profile",
+    "climateMissing": "Local climate data is unavailable right now.",
+    "search": "Search crops…", "season": "Season", "allSeasons": "All seasons",
+    "count": "{{count}} crops ranked",
+    "photoAlt": "{{crop}} growing on a farm",
+    "matchPercent": "{{value}}% match",
+    "confidence": "based on {{value}}% of the factors",
+    "viewDetails": "View Details",
+    "save": "Save crop", "unsave": "Remove from saved crops",
+    "saveNamed": "Save {{crop}}", "unsaveNamed": "Remove {{crop}} from saved crops",
+    "saved": "{{crop}} saved to your farm plan", "removed": "{{crop}} removed from your saved crops",
+    "none": "No crops match your filters.",
+    "disclaimer": "This is general guidance based on published reference ranges. Confirm with your local agriculture office or Krishi Vigyan Kendra before you plant.",
+    "sources": "Sources",
+    "detailsTitle": "Growing guidance",
+    "why": "Why this ranking",
+    "saveToPlan": "Save to Farm Plan", "removeFromPlan": "Remove from Farm Plan"
+  },
+  "explain": {
+    "soil": {
+      "ideal": "{{soil}} soil is ideal for {{crop}}.",
+      "good": "{{soil}} soil is good for {{crop}}.",
+      "fair": "{{soil}} soil is only fair for {{crop}}; manage drainage and fertility carefully.",
+      "poor": "{{soil}} soil is not well suited to {{crop}}.",
+      "unknown": "Soil type is not known."
+    },
+    "ph": {
+      "unknown": "Add your soil pH in your profile to check this.",
+      "good": "Soil pH {{ph}} is within the best range for {{crop}} ({{min}}–{{max}}).",
+      "ok": "Soil pH {{ph}} is acceptable for {{crop}} but outside the best range ({{min}}–{{max}}).",
+      "poor": "Soil pH {{ph}} is poorly suited to {{crop}} (best {{min}}–{{max}}); consider soil correction."
+    },
+    "temperature": {
+      "unknown": "Local temperature data is not available right now.",
+      "good": "An average of about {{temp}}°C during the growing months suits {{crop}} (best {{min}}–{{max}}°C).",
+      "ok": "An average of about {{temp}}°C during the growing months is acceptable for {{crop}} (best {{min}}–{{max}}°C).",
+      "poor": "An average of about {{temp}}°C during the growing months is outside the comfortable range for {{crop}} ({{min}}–{{max}}°C)."
+    },
+    "water": {
+      "unknown": "Add your water availability in your profile (and local rainfall data is needed) to check this.",
+      "good": "Water supply looks adequate for {{crop}}, which needs about {{min}}–{{max}} mm per season.",
+      "ok": "Water supply is only partly adequate; {{crop}} needs about {{min}}–{{max}} mm per season, so plan irrigation.",
+      "poor": "Water supply looks short for {{crop}}, which needs about {{min}}–{{max}} mm per season.",
+      "rainInfo": "Observed rainfall over the growing months: about {{rain}} mm.",
+      "excess": "Rainfall is well above the crop's need; make sure fields drain well."
+    },
+    "season": {
+      "now": "The sowing window for {{crop}} is open now ({{window}}).",
+      "soon": "The sowing window for {{crop}} opens soon ({{window}}).",
+      "later": "It is outside the sowing window for {{crop}}; the next window is {{window}}."
+    },
+    "region": {
+      "unknown": "Select your state in your profile to check this.",
+      "good": "{{crop}} is a major crop in {{state}}.",
+      "poor": "{{crop}} is not among the major crops of {{state}}; local experience and markets may be limited."
+    },
+    "moisture": {
+      "unknown": "Add your soil moisture in your profile to check this.",
+      "good": "Your soil moisture ({{moisture}}) suits the water needs of {{crop}}.",
+      "ok": "Your soil moisture ({{moisture}}) is acceptable for {{crop}}.",
+      "poor": "Your soil moisture ({{moisture}}) is a poor match for {{crop}}."
+    }
+  },
+  "guidance": {
+    "sowing": "Sowing", "window": "Sowing window", "sowingWindow": "Sowing window", "method": "Method",
+    "seedRate": "Seed rate", "spacing": "Spacing",
+    "spacingRowPlant": "{{row}} cm between rows × {{plant}} cm between plants",
+    "spacingRow": "{{row}} cm between rows",
+    "methods": {
+      "nursery_transplant": "Raise seedlings in a nursery and transplant them to the field.",
+      "drill": "Sow seed in rows with a seed drill or behind the plough.",
+      "dibbling": "Sow seeds by hand (dibbling) on ridges or flat beds at the spacing below.",
+      "setts": "Plant healthy, disease-free cane pieces (setts) with 2–3 buds in furrows."
+    },
+    "irrigation": "Irrigation", "waterNeed": "Water need", "waterMm": "about {{min}}–{{max}} mm per season",
+    "fertilizer": "Fertilizer", "nutrient": "Nutrient", "perHectare": "Typical dose per hectare",
+    "calculateForFarm": "Calculate for my farm area →",
+    "harvest": "Harvest", "harvestWindow": "Harvest window", "duration": "Crop duration", "days": "{{range}} days"
+  },
+  "irrigation": {
+    "rice": "Keep a shallow layer of standing water (about 2–5 cm) from transplanting until grain filling, and drain the field 7–10 days before harvest.",
+    "wheat": "Irrigate at crown-root initiation (about 3 weeks after sowing) and again at tillering, flowering and grain filling.",
+    "maize": "Irrigate at critical stages: knee-high, tasseling/silking and grain filling. Avoid waterlogging.",
+    "soybean": "Usually rainfed. Give protective irrigation during flowering and pod filling if there is a dry spell.",
+    "cotton": "Water is most critical at flowering and boll development. Avoid waterlogging; furrow or drip irrigation is efficient.",
+    "sugarcane": "Needs frequent irrigation, especially at germination and in the grand-growth stage. Reduce in winter and stop before harvest.",
+    "chickpea": "Grows mostly on stored soil moisture. If water is available, one or two irrigations before flowering and at pod development help; avoid excess water.",
+    "groundnut": "Irrigate at flowering, pegging and pod development. Avoid waterlogging.",
+    "onion": "Give light, frequent irrigation and keep soil evenly moist. Stop irrigation 10–15 days before harvest.",
+    "tomato": "Keep soil evenly moist (drip with mulch works well) and avoid water stress at flowering and fruit set."
+  },
+  "harvest": {
+    "rice": "Harvest when about 80–85% of the grains in the panicle turn straw-coloured.",
+    "wheat": "Harvest when the grains are hard and the straw turns golden-yellow.",
+    "maize": "Harvest when the husks dry and the kernels are hard.",
+    "soybean": "Harvest when the leaves have dropped and the pods are dry and yellow-brown.",
+    "cotton": "Pick fully opened bolls in two or three pickings.",
+    "sugarcane": "Harvest at maturity once the leaves yellow; check with your local sugar mill for the best time.",
+    "chickpea": "Harvest when the leaves and pods turn yellow-brown and dry.",
+    "groundnut": "Harvest when the leaves yellow and the inside of the pod shell shows dark markings.",
+    "onion": "Harvest when about half of the tops have fallen over, then cure the bulbs in shade.",
+    "tomato": "Pick fruit at the stage that suits your market distance, from mature green to fully red."
+  },
+  "fert": {
+    "timing": {
+      "n_three_splits": "Apply all phosphorus and potassium at sowing or transplanting. Split nitrogen into three doses: at planting, during active vegetative growth, and at the next critical stage.",
+      "n_two_splits": "Apply all phosphorus and potassium and half of the nitrogen at sowing; apply the remaining nitrogen after the first irrigation (about 3 weeks after sowing).",
+      "all_basal": "Apply the whole dose as a basal application at sowing.",
+      "splits": "Apply phosphorus and part of the nitrogen and potassium before planting; give the rest in two or three split doses during growth.",
+      "follow_local": "Fertilizer needs vary widely by state, variety and irrigation. Follow your state agricultural university's recommendation and a soil test."
+    },
+    "extra": {
+      "k_if_deficient": "Apply potassium only if a soil test shows a deficiency.",
+      "gypsum_flowering": "Apply gypsum (about 500 kg/ha) around flowering for better pod filling."
+    }
+  },
+  "nav": {
+    "dashboard": "Dashboard", "crops": "Crop Recommendations", "weather": "Weather Dashboard",
+    "disease": "Disease Detection", "fertilizer": "Fertilizer Guidance", "market": "Market Prices",
+    "schedule": "Farming Schedule", "notifications": "Notifications", "profile": "My Profile",
+    "adminAnalytics": "Analytics Dashboard", "adminFarmers": "Farmer Management",
+    "adminRecords": "Recommendation Records", "adminMarket": "Market Price Management",
+    "adminReports": "Reports & Statistics", "admin": "Admin", "farmer": "Farmer",
+    "workspaceFarmer": "FARMER WORKSPACE", "workspaceAdmin": "ADMIN WORKSPACE", "account": "ACCOUNT",
+    "supportTitle": "A helping hand for your farm", "supportText": "We're here for you, every step of the growing season.",
+    "contactSupport": "Contact Support", "farmerSignIn": "Farmer Sign In", "adminPortal": "Admin Portal",
+    "logout": "Log out", "openMenu": "Open navigation", "closeMenu": "Close navigation",
+    "notificationsUnread": "Notifications, {{count}} unread",
+    "copyright": "© {{year}} KrushiMitra. Growing a better tomorrow.", "madeFor": "Made for farmers, with care."
+  },
+  "auth": {
+    "titleLogin": "Sign in", "titleRegister": "Create account", "titleAdmin": "Admin sign in",
+    "headingLogin": "Welcome back, farmer.", "headingRegister": "Start your growing journey.",
+    "headingAdmin": "Welcome, Administrator.",
+    "subLogin": "Sign in to your KrushiMitra workspace.", "subRegister": "Create your KrushiMitra account.",
+    "bannerAlt": "Green agricultural fields", "heroTitle": "Rooted in care. Growing with you.",
+    "heroText": "A healthier farm, a more confident farmer, and a better tomorrow.",
+    "adminPortal": "Admin Portal", "fullName": "Full name", "fullNamePlaceholder": "Your full name",
+    "location": "Village / district", "locationPlaceholder": "e.g. Pune, Maharashtra",
+    "email": "Email address", "emailPlaceholder": "you@example.com",
+    "password": "Password", "passwordHint": "At least 8 characters",
+    "showPassword": "Show password", "hidePassword": "Hide password",
+    "agree": "I agree to the KrushiMitra terms of use and privacy policy.",
+    "createAccount": "Create Account", "signIn": "Sign In", "restoring": "Restoring your session…",
+    "welcomeRegistered": "Welcome to KrushiMitra — your account is ready",
+    "welcomeFarmer": "Welcome to your farmer workspace", "welcomeAdmin": "Welcome to your admin workspace",
+    "haveAccount": "Already have an account?", "signInLink": "Sign in",
+    "newHere": "New to KrushiMitra?", "createLink": "Create an account",
+    "backToFarmer": "Back to Farmer Login", "adminLink": "Administrator? Use the Admin Portal"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "Can't reach the server. Check your connection and try again.",
+    "unauthorized": "Please sign in to continue.",
+    "session_expired": "Your session has expired. Please sign in again.",
+    "forbidden": "You don't have access to this page.",
+    "inactive": "This account is inactive. Please contact support.",
+    "invalid_credentials": "Invalid email or password.",
+    "not_admin": "This account doesn't have administrator access.",
+    "use_admin_portal": "Administrators sign in through the Admin Portal.",
+    "email_taken": "An account with this email already exists.",
+    "wrong_current_password": "Your current password is incorrect.",
+    "same_password": "Choose a new password that's different from the current one.",
+    "invalid_input": "Please check the details you entered and try again.",
+    "invalid_image": "Please upload a JPG, PNG, or WebP image.",
+    "image_too_large": "Image must be smaller than 10 MB.",
+    "invalid_upload": "That upload couldn't be processed.",
+    "too_many_requests": "Too many attempts. Please wait a few minutes and try again.",
+    "not_found": "We couldn't find what you were looking for.",
+    "server_error": "Something went wrong on our end. Please try again."
+  },
+  "dashboard": {
+    "pageTitle": "Farmer Dashboard", "loading": "Loading your farm…",
+    "greeting": {
+      "morning": "Good morning, {{name}}!", "afternoon": "Good afternoon, {{name}}!", "evening": "Good evening, {{name}}!"
+    },
+    "subtitle": "Here's what's growing on your farm today.",
+    "heroAlt": "Lush green farm fields at sunrise", "heroEyebrow": "SMARTER FARMING. BETTER HARVESTS.",
+    "heroTitle": "A little insight. A lot of growth.",
+    "heroText": "Make confident decisions for a healthier, more productive farm.",
+    "heroCta": "Explore Crop Recommendations",
+    "statArea": "Total Farm Area", "statCrops": "Active Crops", "statYield": "Estimated Yield", "statRevenue": "Estimated Revenue",
+    "acrossFields": "Across {{count}} active fields", "addTasksHint": "Add tasks to track your fields",
+    "thisSeason": "This growing season", "vsLastSeason": "vs. last season",
+    "noYieldRecords": "No yield records yet", "noRevenueRecords": "No revenue records yet",
+    "performance": "Farm Performance", "performanceSub": "Your crop yield over the last {{count}} months",
+    "period": "Performance period", "last6": "Last 6 months", "last3": "Last 3 months",
+    "actualYield": "Actual yield", "expectedYield": "Expected yield", "yieldAxis": "Yield (quintals)",
+    "noYield": "No yield records yet.",
+    "quickActions": "Quick Actions", "quickSub": "Everything you need, just a click away",
+    "qaDisease": "Detect Disease", "qaCrops": "Find Best Crops", "qaPlan": "Plan Farming", "qaPrices": "Check Prices",
+    "recommended": "Recommended for Your Farm", "recommendedSub": "A good fit for your {{soil}} soil, season, and location",
+    "todayWeather": "Today's Weather",
+    "marketGlance": "Market at a Glance", "marketGlanceSub": "Latest mandi prices · ₹ / quintal",
+    "updated": "Updated", "viewAllPrices": "View all market prices",
+    "upcoming": "Upcoming Tasks", "upcomingSub": "A little planning goes a long way",
+    "noTasks": "No upcoming tasks. Enjoy the calm.", "viewSchedule": "View farming schedule"
+  },
+  "weather": {
+    "pageTitle": "Weather Dashboard", "title": "A clearer outlook for your farm.",
+    "subtitle": "Weather conditions and a seven-day forecast for smarter planning.",
+    "location": "Weather location", "current": "Current conditions · {{place}}",
+    "liveForecast": "Live forecast", "sampleForecast": "Sample forecast",
+    "liveBadge": "Live forecast · Open-Meteo", "sampleBadge": "Sample forecast · Live weather is currently unavailable",
+    "feelsLike": "Feels like {{temp}}°C", "humidity": "Humidity", "wind": "Wind", "windValue": "{{speed}} km/h",
+    "rainChance": "Rain chance", "uv": "UV index", "today": "Today",
+    "outlook": "Fieldwork outlook", "outlookSub": "Plan around the coming week",
+    "rainExpected": "Rain expected {{day}}", "rainAdvice": "Delay fertilizer application if heavy rain develops. Check drainage in low-lying fields.",
+    "sevenDay": "7-day forecast",
+    "advice": {
+      "dry": "Good conditions for fieldwork. Keep your crops hydrated.",
+      "showers": "Showers are likely soon. Plan fieldwork around the rain."
+    },
+    "summary": {
+      "clear": "Clear sky", "mostly_sunny": "Mostly sunny", "partly_cloudy": "Partly cloudy", "overcast": "Overcast",
+      "foggy": "Foggy", "rain": "Rain", "thunderstorm": "Thunderstorm", "cloudy": "Cloudy"
+    },
+    "uvLevel": { "low": "Low", "moderate": "Moderate", "high": "High", "very_high": "Very high", "extreme": "Extreme" }
+  },
+  "disease": {
+    "pageTitle": "Disease Detection", "title": "Healthy crops start with a closer look.",
+    "subtitle": "Upload a crop photo to explore a sample disease assessment.",
+    "imageTitle": "Crop image", "imageSub": "A clear photo of the affected leaf works best",
+    "upload": "Upload crop image", "previewAlt": "Uploaded crop for assessment", "change": "Change image",
+    "drop": "Drop your crop image here", "formats": "JPG, PNG, or WebP · Up to 10 MB", "choose": "Choose Image",
+    "preparing": "Preparing sample assessment…", "viewSample": "View Sample Assessment",
+    "privacy": "Your photo is checked and then discarded — it isn't stored. No image analysis or AI service is connected yet.",
+    "assessment": "Assessment", "assessmentSub": "Understand what to look out for",
+    "illustrative": "Illustrative result · Not a diagnosis",
+    "sampleNotice": "This sample shows how an assessment could appear. Your uploaded image has not been analyzed.",
+    "signsTitle": "Common signs", "stepsTitle": "Suggested next steps",
+    "emptyTitle": "Your crop assessment will appear here",
+    "emptyText": "Upload an image to see a sample assessment and care recommendations.",
+    "conditions": {
+      "early_blight": {
+        "name": "Early blight",
+        "signs": "Brown concentric spots on older leaves, yellowing around the spots, and gradual leaf loss.",
+        "step1": "Consult a local agricultural specialist for identification.",
+        "step2": "Avoid overhead watering and inspect nearby plants.",
+        "step3": "Follow locally approved treatment recommendations."
+      }
+    }
+  },
+  "fertilizer": {
+    "pageTitle": "Fertilizer Guidance", "title": "Nourish your soil. Support your harvest.",
+    "subtitle": "See typical published nutrient doses for your crop, scaled to your farm area.",
+    "details": "Your field details", "crop": "Crop", "area": "Farm area (acres)",
+    "generating": "Calculating…", "generate": "Calculate Nutrient Plan",
+    "disclaimer": "Typical recommended ranges only. A soil test and advice from your local agriculture office are needed before applying fertilizer.",
+    "planTitle": "{{crop}} · {{area}} acres", "planSub": "Typical recommended range for your area",
+    "yourPlan": "Your nutrient plan", "yourPlanSub": "Based on published recommendations",
+    "recommended": "Typical dose", "stages": "When to apply", "download": "Download Plan",
+    "source": "Source", "soilTest": "Always confirm with a soil test.", "seeCrops": "See crop recommendations",
+    "empty": "Choose your crop and farm area to see a nutrient plan."
+  },
+  "market": {
+    "pageTitle": "Market Prices", "adminTitle": "Market Price Management", "title": "A better price for your hard work.",
+    "subtitle": "Sample mandi prices · Prices per quintal", "updatedOn": "Updated {{date}}",
+    "addPrice": "Add Price", "export": "Export Prices", "search": "Search crop…", "filterMarket": "Filter market",
+    "allMarkets": "All markets", "count": "{{count}} crops",
+    "colCrop": "Crop", "colPrice": "Price", "colChange": "Change", "colCropVariety": "Crop / Variety",
+    "colMarket": "Market", "colPricePerQuintal": "Price / quintal", "colManage": "Manage", "colUpdated": "Updated",
+    "editPrice": "Edit price", "none": "No prices match your search.",
+    "disclaimer": "These are sample prices, not live market quotations. Confirm current rates with your local mandi.",
+    "dialogUpdate": "Update {{crop}} price", "dialogAdd": "Add market price",
+    "fieldCrop": "Crop", "fieldVariety": "Variety", "fieldPrice": "Price (₹ / quintal)", "fieldDate": "Updated date",
+    "save": "Save Price", "updated": "Market price updated", "added": "Market price added", "deleted": "Price record deleted",
+    "confirmDelete": "Delete the {{crop}} ({{variety}}) price at {{market}}?"
+  },
+  "schedule": {
+    "pageTitle": "Farming Schedule", "title": "Good planning. Better growing.",
+    "subtitle": "Keep every field and farming task on track.", "addTask": "Add Task",
+    "prevMonth": "Previous month", "nextMonth": "Next month", "today": "Today",
+    "upcoming": "Your upcoming tasks", "remaining": "Tasks remaining: {{count}}",
+    "complete": "Complete {{title}}", "deleteNamed": "Delete {{title}}", "none": "No tasks yet. Add your first one.",
+    "dialogTitle": "Add farming task", "fieldName": "Task name", "namePlaceholder": "e.g. Irrigate rice field",
+    "fieldDate": "Date", "fieldTime": "Time", "fieldCrop": "Crop", "fieldCategory": "Category",
+    "fieldField": "Field", "fieldPlaceholder": "e.g. Field A", "adding": "Adding…",
+    "added": "Task added to your farming schedule", "removed": "Task removed"
+  },
+  "notifications": {
+    "pageTitle": "Notifications", "title": "Stay in the know.", "subtitle": "Important updates for your farm, all in one place.",
+    "markAll": "Mark all as read", "allRead": "All notifications marked as read", "unread": "Unread",
+    "markRead": "Mark as read", "markReadNamed": "Mark {{title}} as read", "none": "You're all caught up."
+  },
+  "notificationTypes": {
+    "Weather": "Weather", "Market": "Market", "Schedule": "Schedule", "Crops": "Crops", "System": "System"
+  },
+  "notificationTexts": {
+    "welcome": {
+      "title": "Welcome to KrushiMitra",
+      "text": "Complete your profile with your farm area and soil type to get tailored crop recommendations."
+    }
+  },
+  "profile": {
+    "pageTitle": "My Profile", "title": "Your farm. Your profile.", "titleAdmin": "Your account.",
+    "subtitle": "Keep your personal and farm information up to date.", "subtitleAdmin": "Keep your administrator details up to date.",
+    "personalDetails": "Personal details", "accountDetails": "Account details",
+    "fullName": "Full name", "phone": "Phone number", "phoneHint": "Enter a 10-digit phone number", "location": "Location",
+    "farmDetails": "Farm details", "farmDetailsSub": "Used to rank crops for your farm",
+    "area": "Farm area (acres)", "soil": "Soil type", "state": "State", "notSet": "Not set",
+    "soilPh": "Soil pH", "soilPhHint": "e.g. 6.5", "moisture": "Soil moisture", "water": "Water availability",
+    "accuracyNote": "A soil test (available from your local Krishi Vigyan Kendra or soil testing lab) gives the pH. Leave optional fields blank if you don't know them.",
+    "save": "Save Changes", "saved": "Profile saved",
+    "notifPrefs": "Notification preferences", "emailUpdates": "Email updates", "weatherAlerts": "Weather alerts",
+    "prefsNote": "Saved with the rest of your profile.",
+    "savedPlans": "Saved crop plans", "noSaved": "No saved crops yet.", "exploreCrops": "Explore crops",
+    "changePassword": "Change password", "currentPassword": "Current password", "newPassword": "New password",
+    "updatePassword": "Update Password", "updating": "Updating…", "passwordChanged": "Password changed"
+  },
+  "admin": {
+    "analyticsTitle": "Admin Analytics", "heading": "A growing community. A stronger future.",
+    "subtitle": "Your KrushiMitra platform overview and agricultural insights.",
+    "statFarmers": "Registered Farmers", "statRecs": "Crop Recommendations", "statArea": "Active Farm Area", "statMarket": "Market Records",
+    "vsLastMonth": "vs. last month", "acrossMandis": "Across {{count}} regional mandis",
+    "registrations": "Farmer Registrations", "registrationsSub": "New farmers joining the platform, by month",
+    "newFarmers": "New farmers", "distribution": "Crop Distribution", "distributionSub": "Share of recommendation records by crop",
+    "noRecords": "No recommendation records yet.", "recentFarmers": "Recent Farmers",
+    "recentFarmersSub": "The latest members of our farming community",
+    "colFarmer": "Farmer", "colLocation": "Location", "colArea": "Farm area", "colAreaShort": "Area",
+    "colStatus": "Status", "colJoined": "Joined", "colActions": "Actions", "colRecordId": "Record ID", "colCrop": "Crop",
+    "colMatch": "Match", "colDate": "Date", "colReview": "Review",
+    "farmersTitle": "Farmer Management", "farmersSub": "Manage farmers and their farm profiles.", "addFarmer": "Add Farmer",
+    "editFarmer": "Edit farmer", "searchFarmers": "Search by name, email or location…", "allStatuses": "All statuses",
+    "deactivate": "Deactivate", "activate": "Activate", "noFarmers": "No farmers found.",
+    "resetPassword": "Reset password", "tempPassword": "Temporary password",
+    "keepPassword": "Leave blank to keep the current password", "letSignIn": "Lets the farmer sign in",
+    "saveFarmer": "Save Farmer", "farmerAdded": "Farmer added", "farmerUpdated": "Farmer profile updated",
+    "nowActive": "{{name}} is now active", "nowInactive": "{{name}} is now inactive",
+    "recordsTitle": "Recommendation Records", "recordsHeading": "Crop Recommendation Records",
+    "recordsSub": "Review crop plans saved by farmers across the community.", "exportRecords": "Export Records",
+    "searchFarmer": "Search farmer…", "filterCrop": "Filter by crop", "allCrops": "All crops",
+    "recordCount": "{{count}} records", "noMatchRecords": "No records match these filters.", "savedOn": "Saved on",
+    "markReviewed": "Mark as Reviewed", "moveBack": "Move back to Pending",
+    "markedReviewed": "Record marked as reviewed", "movedPending": "Record moved back to pending",
+    "reportsTitle": "Reports & Statistics", "reportsSub": "A clear picture of your farming community and platform performance.",
+    "period": "Report period", "downloadCsv": "Download CSV", "preparing": "Preparing…",
+    "noPeriodData": "There's no data for this period yet.",
+    "yieldPerformance": "Yield Performance", "yieldSub": "Expected vs. actual yield (quintals) · up to {{period}}",
+    "report": {
+      "farmers": { "title": "Farmer Report", "text": "Farmer profiles, land area, and account activity." },
+      "market": { "title": "Market Price Report", "text": "Regional crop prices and market movements." },
+      "yield": { "title": "Yield Performance Report", "text": "Expected and actual crop yields by month." }
+    }
+  },
+  "notFound": {
+    "title": "Page not found", "text": "The page you're looking for doesn't exist or has been moved.", "home": "Go home"
+  }
+}

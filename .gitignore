@@ -1,0 +1,12 @@
+node_modules
+dist
+*.log
+.env
+.env.local
+# local SQLite database (created on first run)
+server/data/*.db
+server/data/*.db-*
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea

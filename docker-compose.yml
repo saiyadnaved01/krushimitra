@@ -1,0 +1,17 @@
+services:
+  krushimitra:
+    build: .
+    ports:
+      - "4000:4000"
+    environment:
+      JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in your environment or a .env file}
+      # Creates the first administrator when the database has none (see README).
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
+      TRUST_PROXY: ${TRUST_PROXY:-}
+    volumes:
+      - krushimitra-data:/data
+    restart: unless-stopped
+
+volumes:
+  krushimitra-data:
